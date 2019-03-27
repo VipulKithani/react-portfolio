@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton , Textfield} from 'react-mdl';
 
 
 class Projects extends Component {
@@ -13,8 +13,34 @@ class Projects extends Component {
     if(this.state.activeTab === 0){
       return(
         <div>
+           <Card shadow={5} style={{width:800,marginLeft:200,marginBottom:20}}>
+            <CardTitle style={{color: 'black', height: '100px',marginLeft:200}} >Lets Post Something New!!</CardTitle>
+            <div>
+            <Textfield
+            onChange={() => {}}
+            label="Enter Your #Tags..!!"
+            floatingLabel
+            style={{width: '700px',marginLeft:20}}
+            />
+            </div>
+            <div>
+            <Textfield
+            onChange={() => {}}
+            label="Whats On your Mind??"
+            floatingLabel
+            style={{width: '700px',marginLeft:20}}
+            />
+            
+            </div> 
+            <div style={{marginLeft:280,paddingBottom:30}}><Button raised colored >Post</Button></div>
+
+            <CardMenu style={{color: 'black'}}>
+              
+            </CardMenu>
+          </Card>  
+
           {/* Project 1 */}
-          <Card shadow={5} style={{width:800,marginLeft:20}}>
+          <Card shadow={5} style={{width:800,marginLeft:200}}>
             <CardTitle style={{color: 'black', height: '100px'}} >1000 kg bombs, Mirage 2000 jets: India attacks Pakistan, what we know so far</CardTitle>
             <CardText>
             Indian Air Force (IAF) jets crossed the Line of Control (LoC) and destroyed terror camps in Pakistan, sources said. The air strike was carried out in Balakot sector at 3.30 am.            
@@ -25,16 +51,21 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>  
-         <IconButton style={{marginLeft:20,marginTop:20,marginBottom:20 }} name="thumb_up" />
+         <IconButton style={{marginLeft:200,marginTop:20,marginBottom:20 }} name="thumb_up" />
          <IconButton style={{marginLeft:10,marginTop:20,marginBottom:20 }} name="thumb_down" />
          
 
         <div>
-           <input style={{marginLeft:20,marginBottom:20, height: 25 , width: 800,borderRadius:10,borderColor:'gray'}} type="text" placeholder="Comment..!!" className="form-control" />
+        <Textfield
+        onChange={() => {}}
+        label="Comment..!!"
+        floatingLabel
+        style={{width: '800px',marginLeft:200}}
+        />
         </div>
         
 
-         <Card shadow={5} style={{width:800,marginLeft:20}}>
+         <Card shadow={5} style={{width:800,marginLeft:200}}>
             <CardTitle style={{color: 'black', height: '100px'}} >What is a decentralized platform in blockchain and how does it work?</CardTitle>
             <CardText>
             Decentralised platform in the Blockchain context means that there is no centralised data storage mechanism
@@ -49,14 +80,18 @@ Most of the designs are in context of the industry (SCM, Finance etc)
               <IconButton name="share" />
             </CardMenu>
           </Card>  
-          <IconButton style={{marginLeft:20,marginTop:20,marginBottom:20 }} name="thumb_up" />
+          <IconButton style={{marginLeft:200,marginTop:20,marginBottom:20 }} name="thumb_up" />
          <IconButton style={{marginLeft:10,marginTop:20,marginBottom:20 }} name="thumb_down" />
 
-        <div>
-           <input style={{marginLeft:20,marginBottom:20, height: 25 , width: 800,borderRadius:10,borderColor:'gray'}} type="text" placeholder="Comment..!!" className="form-control" />
+         <div>
+        <Textfield 
+        onChange={() => {}}
+        label="Comment..!!"
+        floatingLabel
+        style={{width: '800px',marginLeft:200}}
+        />
         </div>
-
-          <Card shadow={5} style={{width:800,marginLeft:20}}>
+          <Card shadow={5} style={{width:800,marginLeft:200}}>
             <CardTitle style={{color: 'black', height: '100px'}} >3. 20% of Earth’s oxygen is produced by the Amazon rainforest</CardTitle>
             <CardText>
             Our atmosphere is made up of roughly 78 per cent nitrogen and 21 per cent oxygen, 
@@ -72,47 +107,21 @@ Most of the designs are in context of the industry (SCM, Finance etc)
               <IconButton name="share" />
             </CardMenu>
           </Card>  
-         <IconButton style={{marginLeft:20,marginTop:20,marginBottom:20 }} name="thumb_up" />
+         <IconButton style={{marginLeft:200,marginTop:20,marginBottom:20 }} name="thumb_up" />
          <IconButton style={{marginLeft:10,marginTop:20,marginBottom:20 }} name="thumb_down" />
 
-        <div>
-           <input style={{marginLeft:20,marginBottom:20, height: 25 , width: 800,borderRadius:10,borderColor:'gray'}} type="text" placeholder="Comment..!!" className="form-control" />
-        </div>
-          
-        </div>
+         <div>
+        <Textfield
+        onChange={() => {}}
+        label="Comment..!!"
+        floatingLabel
+        style={{width: '800px',marginLeft:200}}
+        />
+        </div>       
+         </div>
       )
       
-    } else if(this.state.activeTab === 1) {
-      return (
-        <div><h1>This is about Music</h1>
-        <Card shadow={5} style={{width:800,marginLeft:20}}>
-            <CardTitle style={{color: 'black', height: '100px'}} >Ranveer Singh to rap in a concert to launch Gully Boy's music album</CardTitle>
-            <CardText>
-            Zoya Akhtar has decided to launch Gully Boy's music album by organising a concert where Ranveer Singh will perform, along with other rappers Divine and Naezy. </CardText>
-
-            <CardMenu style={{color: 'black'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>  
-         <IconButton style={{marginLeft:20,marginTop:20,marginBottom:20 }} name="thumb_up" />
-         <IconButton style={{marginLeft:10,marginTop:20,marginBottom:20 }} name="thumb_down" />
-         
-
-        <div>
-           <input style={{marginLeft:20,marginBottom:20, height: 25 , width: 800,borderRadius:10,borderColor:'gray'}} type="text" placeholder="Comment..!!" className="form-control" />
-        </div>
-         </div>
-        
-      )
-    } else if(this.state.activeTab === 2) {
-      return (
-        <div><h1>This is about politics</h1></div>
-      )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is about Colleges</h1></div>
-      )
-    }
+    } 
 
   }
 
@@ -121,16 +130,12 @@ Most of the designs are in context of the industry (SCM, Finance etc)
   render() {
     return(
       <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-        <Tab>Blogs</Tab>
-          <Tab>Music</Tab>
-          <Tab>Politics</Tab>
-          <Tab>Colleges</Tab>
-        </Tabs>
+       
 
 
           <Grid>
-            <Cell col={12}>
+            
+            <Cell col={6}>
               <div className="content">{this.toggleCategories()}</div>
             </Cell>
           </Grid>

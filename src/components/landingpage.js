@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell,Button } from 'react-mdl';
 
 
 
@@ -15,6 +15,9 @@ class Landing extends Component {
               <h1>BlogChain</h1>
               <button href="#"> Sign In Using 3Box!!</button>
               <button href="#"> Sign In Anonymously!!</button>
+              
+              
+
 
             </div>
           

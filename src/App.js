@@ -13,18 +13,10 @@ class App extends Component {
             <Navigation>
                 <Link to="/resume">Profile</Link>
                 <Link to="/aboutme">About </Link>
-                <Link to="/projects">SubCategories</Link>
-                <Link to="/contact">Search</Link>
+                <Link to="/projects">Show Feeds</Link>
+                <Link to="/">SignOut</Link>
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Home</Link>}>
-            <Navigation>
-              <Link to="/resume">Profile</Link>
-              <Link to="/aboutme">About </Link>
-              <Link to="/projects">SubCategories</Link>
-              <Link to="/contact">Search</Link>
-            </Navigation>
-        </Drawer>
         <Content>
             <div className="page-content" />
             <Main/>
