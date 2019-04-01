@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton , Textfield} from 'react-mdl';
+import { Tabs, Tab, Grid,Chip,ChipContact, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton , Textfield} from 'react-mdl';
 
 
 class Projects extends Component {
@@ -13,6 +13,16 @@ class Projects extends Component {
     if(this.state.activeTab === 0){
       return(
         <div>
+          <div style={{marginBottom:-50}}>
+            <Chip style={{marginLeft:1050,width:150}}>
+        <ChipContact className="mdl-color--teal mdl-color-text--white">20</ChipContact>
+        Followers
+        </Chip>
+        <Chip style={{marginLeft:1050,width:150}}>
+        <ChipContact className="mdl-color--teal mdl-color-text--white">11</ChipContact>
+        Online
+        </Chip>
+        </div>
            <Card shadow={5} style={{width:800,marginLeft:200,marginBottom:20}}>
             <CardTitle style={{color: 'black', height: '100px',marginLeft:200}} >Lets Post Something New!!</CardTitle>
             <div>
@@ -38,7 +48,7 @@ class Projects extends Component {
               
             </CardMenu>
           </Card>  
-
+        
           {/* Project 1 */}
           <Card shadow={5} style={{width:800,marginLeft:200}}>
             <CardTitle style={{color: 'black', height: '100px'}} >1000 kg bombs, Mirage 2000 jets: India attacks Pakistan, what we know so far</CardTitle>
